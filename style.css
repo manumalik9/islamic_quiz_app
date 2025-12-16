@@ -1,0 +1,49 @@
+body {
+    background-color: #e9ecef; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Relying on the .container-sm class in HTML for responsiveness, 
+   but keeping a max-width for aesthetic on very large screens */
+.container {
+    max-width: 700px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+/* Custom styling for answer buttons */
+.option-btn {
+    text-align: left;
+    white-space: normal;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+/* Visual Feedback Styles */
+.option-btn.correct {
+    background-color: #28a745 !important; /* Green */
+    color: white;
+    border-color: #28a745;
+}
+
+.option-btn.incorrect {
+    background-color: #dc3545 !important; /* Red */
+    color: white;
+    border-color: #dc3545;
+}
+
+.option-btn:disabled {
+    pointer-events: none; /* Disable hovering effects when locked */
+}
+
+/* FIXED: Media query to adjust size on small screens (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Reduce the height and font size of the progress bar to prevent overlap */
+    .progress {
+        height: 18px !important; 
+        font-size: 0.75rem; 
+    }
+}
