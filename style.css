@@ -1,0 +1,38 @@
+body {
+    background-color: #e9ecef; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+/* Custom styling for answer buttons */
+.option-btn {
+    text-align: left;
+    white-space: normal;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+/* Visual Feedback Styles (Task 3.2) */
+.option-btn.correct {
+    background-color: #28a745 !important; /* Green */
+    color: white;
+    border-color: #28a745;
+}
+
+.option-btn.incorrect {
+    background-color: #dc3545 !important; /* Red */
+    color: white;
+    border-color: #dc3545;
+}
+
+.option-btn:disabled {
+    pointer-events: none; /* Disable hovering effects when locked */
+}
